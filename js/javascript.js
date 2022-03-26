@@ -32,11 +32,10 @@ let nameSity = document.querySelectorAll(".sity_name");
 input.onclick = ()=>{
     inputSearch.value = "";
 }
-
-
 function inputValue(a){
-    
         inputSearch.value = a;
-    
-    
+}
+let numberJobsInput = document.querySelector(".number_jobs_input");
+numberJobsInput.onclick = ()=>{
+    numberJobsInput.value = "";
 }
