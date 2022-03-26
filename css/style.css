@@ -162,7 +162,7 @@ header{
     padding-right: 25px;
     display: none;
     transform: translateX(-150px);
-    
+    z-index: 10;
     display: none;
     flex-direction: column;
     justify-content: center;
@@ -175,6 +175,7 @@ header{
     width: 300px;
     margin: 10px auto;
     justify-content: space-around;
+   
 }
 .box_search_your_sity{
     height: 17px;
@@ -209,7 +210,6 @@ header{
     position: absolute;
     width: 20px;
     height: 20px;
-    
     right: 60px;
     top:30px;
     color: black;
@@ -230,4 +230,79 @@ header{
     transform: translate(-10px, -10px);
     bottom: 20px;
     cursor: pointer;
+}
+/* закончили header - тепер body */
+.body_one_blox{
+    background: #1E4A58;
+    height: 230px;
+    width: 100%;
+    left: 0px;
+    top: 100px;
+    border-radius: 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.body_one_blox_header{
+    display: flex;
+    flex-direction: row;
+}
+.number_joba{
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 40px;
+}
+.number_jobs_input{
+    height: 48px;
+    width: 1055px;
+    
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.808);
+    font-family:" Mont Blanc";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-left: 20px;
+    display: inline-block;
+    color: rgba(0, 0, 0, 0.61);
+}
+.number_jobs_img{
+    height: 20.31399917602539px;
+    width: 20.31399917602539px;
+    left: 2px;
+    top: 2px;
+    border-radius: 0px;
+    position: relative;
+    transform: translate(-40px, 15px);
+    display: inline-block;
+    cursor: pointer;
+}
+.body_one_blox_propertis,
+.body_one_blox_img{
+    height: 25px;
+    width: 25px;
+    left: 2px;
+    top: 1.9975433349609375px;
+    border-radius: 0px;
+    display: inline-block;
+    position: relative;
+    transform: translate(-45px, 23px);
+    cursor: pointer;
+}
+.body_one_blox_propertis{
+    color: #FFFFFF;
+    font-family: "Mont Blanc";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-top: 5px;
+
 }
