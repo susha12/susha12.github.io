@@ -26,3 +26,17 @@ locationSity.onclick = ()=>{
     }
     
 }
+let inputSearch = document.querySelector(".search_sity");
+let input = document.querySelector(".input");
+let nameSity = document.querySelectorAll(".sity_name");
+input.onclick = ()=>{
+    inputSearch.value = "";
+}
+
+
+function inputValue(a){
+    
+        inputSearch.value = a;
+    
+    
+}
