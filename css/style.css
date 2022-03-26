@@ -209,45 +209,24 @@ header{
     position: absolute;
     width: 20px;
     height: 20px;
-    border-bottom: 2px solid rgb(0, 0, 0);
+    
     right: 60px;
     top:30px;
     color: black;
     font-size: 20px;
-    transform: rotate(45deg) translateX(-10px);
+    transform: translate(-10px, -5px);
     bottom: 20px;
 
 }
 
-.input::before{
-    content: "";
-    position: relative;
-    width: 10px;
-    height: 1px;
-    border-left: 2px solid rgb(0, 0, 0);
-    top: 4px;
-    left: 9px;
-    font-size: 18px;
-}
 .input_one{
     position: absolute;
     width: 10px;
     height: 20px;
-    border-bottom: 2px solid rgb(0, 0, 0);
     right: 35px;
     top:33px;
     color: black;
     font-size: 20px;
-    transform: rotate(45deg) translateX(-10px);
+    transform: translate(-10px, -10px);
     bottom: 20px;
-}
-.input_one::before{
-    content: "";
-    position: relative;
-    width: 10px;
-    height: 1px;
-    border-left: 2px solid rgb(0, 0, 0);
-    top: -5px;
-    left: 9px;
-    font-size: 18px;
 }
