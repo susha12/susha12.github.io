@@ -130,6 +130,10 @@ header{
 
 
 }
+.box_menu div:hover,
+.box_location_name_sity:hover{
+    color: #FFA800;
+}
 .box_three_list li,
 .box_sity_list li{
     list-style-type: none;
