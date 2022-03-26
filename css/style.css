@@ -4,7 +4,7 @@
     font-style: normal; 
     font-weight: normal; 
     }        
-
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&family=Ubuntu:ital@0;1&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -29,7 +29,7 @@ header{
     margin: 0 auto;
     display: flex;
 }
-.box_logo{
+.box_logo a{
     display: flex;
     position: relative;
     align-items: center;
@@ -305,4 +305,217 @@ header{
     text-align: left;
     padding-top: 5px;
 
+}
+
+/* footer */
+footer{
+    height: 588px;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    border-radius: 0px;
+    background: #121B29;
+
+}
+.footer_box{
+    width: 1200px;
+    height: 550px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    left: -50px;
+    position: relative;
+}
+.colump_left{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+    
+    
+}
+
+.footer_hr_img{
+    height: 0px;
+    width: 180px;
+    border: 1px solid #FFFFFF26;
+}
+.colump_centr{
+    height: 200px;
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.colump_centr li{
+    margin-bottom: 20px;
+    list-style-type: none;
+    height: 16px;
+    width: 134px;
+}
+.colump_centr li a{
+    color: white;
+    font-family: "Montserrat";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+.colump_centr li a:hover{
+    color: #FFA800;
+
+}
+.colump_footer_bottom{
+    height: 120px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.colump_footer_bottom_top{
+    height: 32px;
+    width: 132px;
+    color: white;
+    font-family: "Ubuntu";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.colump_footer_bottom_top_top{
+    height: 32px;
+    width: 132px;
+    color: rgb(153, 153, 153);
+    font-family: "Ubuntu";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+
+
+
+.colump_right{
+    width: 800px;
+}
+.colump_right_top{
+    width: 800px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+}
+.colump_right_top_main{
+    width: 800px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.colump_right_top_main div{
+    position: relative;
+    top: 50px;
+    left: 70px;
+    width: 200px;
+    height: 150px;
+}
+.main_list{
+    
+    font-family: "Montserrat";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #FFFFFF80;
+    
+    cursor: pointer;
+}
+.main_list a{
+    height: 240px;
+    width: 368px;
+    font-family: "Montserrat";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #FFFFFF80;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+
+.colump_right_bottom_name,
+.colump_right_top_name{
+    font-family: "Montserrat";
+    position: relative;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    height: 18px;
+    width: 74px;
+    color: #FFFFFF;
+    left: 55px;
+    top: 50px;
+}
+.colump_right_bottom_name{
+    top: 35px;
+}
+.colump_right_bottom_main{
+    margin-top: 20px;
+    width: 800px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: -50px;
+    color: #FFFFFF80;
+}
+.colump_right_bottom_main a{
+    height: 240px;
+    width: 368px;
+    font-family: "Montserrat";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #FFFFFF80;
+    text-decoration: none;
+    cursor: pointer;
+}
+.colump_right_bottom_main a:hover,
+.main_list a:hover{
+    color: #FFA800;
+}
+
+
+
+.colump_right_hr{
+    height: 0px;
+    width: 896px;
+    border: 1px solid #FFFFFF26;
 }
