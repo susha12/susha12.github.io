@@ -125,6 +125,7 @@ header{
     margin-right: 150px;
     display: none;
     transform: translateX(-40px);
+    z-index: 100;
 
 
 }
