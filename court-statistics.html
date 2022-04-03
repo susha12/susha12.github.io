@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+
+		<meta charset="utf-8">
+
+		<title>Правостат - Статистика судопроизводств</title>
+		<meta name="description" content="htmllessons.ru - Лучшие уроки по созданию сайтов">
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/png">
+
+		<!-- Chrome, Firefox OS and Opera -->
+		<meta name="theme-color" content="#36A26B">
+		<!-- Windows Phone -->
+		<meta name="msapplication-navbutton-color" content="#36A26B">
+		<!-- iOS Safari -->
+		<meta name="apple-mobile-web-app-status-bar-style" content="#36A26B">
+
+        <!-- стили -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/court-statistics.css">
+        <link rel="stylesheet" href="css/adaptive.css">
+
+    </head>
+<body>
+  <!-- Шапка -->
+  <header id="header">
+    <div class="menu__header">
+        <div class="logotype__header">
+            <a href="lawyer-page.html">
+                <img src="/img/logotype/logtype.svg" alt="">
+            </a>
+        </div>
+        <div class="hamburger-menu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="adaptive-center-side-header">
+            <div class="close-adaptive-menu">&#10006;</div>
+            <div class="logotype__header adaptive-logotype">
+                <a href="lawyer-page.html">
+                    <img src="/img/logotype/logtype.svg" alt="">
+                </a>
+            </div>
+            <ul class="adaptive-hamburger-menu">
+                <li class="list__header"><a href="#">Судебная практика</a></li>
+                <li class="list__header"><a href="#">Аналитика</a></li>
+                <li class="list__header pod-menu-adaptive__header">
+                    <a href="#" class="arrow-right-list__header">
+                        Поиск специалиста
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="arrow-right__header" d="M8.00001 8.78133L11.3 5.48133L12.2427 6.424L8.00001 10.6667L3.75734 6.424L4.70001 5.48133L8.00001 8.78133Z" fill="white"/>
+                        </svg>
+                        <div class="pod-menu-adaptive-list__header">
+                            <a class="adaptive-menu" href="#">Адвокаты</a>
+                            <a class="adaptive-menu" href="#">Юристы</a>
+                            <a class="adaptive-menu" href="#">Нотариусы</a>
+                            <a class="adaptive-menu" href="#">Криминалисты</a>
+                            <a class="adaptive-menu" href="#">Налоговые инспекторы</a>
+                            <a class="adaptive-menu" href="#">Прокуроры</a>
+                            <a class="adaptive-menu" href="#">Судьи</a>
+                            <a class="adaptive-menu" href="#">Следователи</a>
+                            <a class="adaptive-menu" href="#">Адвокаты</a>
+                            <a class="adaptive-menu" href="#">Таможенные инспекторы</a>
+                            <a class="adaptive-menu" href="#">Юристы</a>
+                            <a class="adaptive-menu" href="#">Нотариусы</a>
+                        </div> 
+                    </a>
+                </li>
+                <li class="list__header">
+                    <a href="#" class="arrow-right-list__header">
+                        Кодексы
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="arrow-right__header" d="M8.00001 8.78133L11.3 5.48133L12.2427 6.424L8.00001 10.6667L3.75734 6.424L4.70001 5.48133L8.00001 8.78133Z" fill="white"/>
+                        </svg>
+                    </a>
+                </li>
+                <li class="list__header"><a href="#">Блог</a></li>
+            </ul>
+        </div>
+        <ul class="center-side__header">
+            <li class="list__header"><a href="#">Судебная практика</a></li>
+            <li class="list__header"><a href="#">Аналитика</a></li>
+            <li class="list__header pod-menu__header">
+                <a href="#" class="arrow-right-list__header">
+                    Поиск специалиста
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="arrow-right__header" d="M8.00001 8.78133L11.3 5.48133L12.2427 6.424L8.00001 10.6667L3.75734 6.424L4.70001 5.48133L8.00001 8.78133Z" fill="white"/>
+                    </svg>
+                    <div class="pod-menu-list__header">
+                        <a href="#">Адвокаты</a>
+                        <a href="#">Юристы</a>
+                        <a href="#">Нотариусы</a>
+                        <a href="#">Криминалисты</a>
+                        <a href="#">Налоговые инспекторы</a>
+                        <a href="#">Прокуроры</a>
+                        <a href="#">Судьи</a>
+                        <a href="#">Следователи</a>
+                        <a href="#">Адвокаты</a>
+                        <a href="#">Таможенные инспекторы</a>
+                        <a href="#">Юристы</a>
+                        <a href="#">Нотариусы</a>
+                    </div>
+                </a>
+            </li>
+            
+            <li class="list__header">
+                <a href="#" class="arrow-right-list__header">
+                    Кодексы
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="arrow-right__header" d="M8.00001 8.78133L11.3 5.48133L12.2427 6.424L8.00001 10.6667L3.75734 6.424L4.70001 5.48133L8.00001 8.78133Z" fill="white"/>
+                    </svg>
+                </a>
+            </li>
+            <li class="list__header"><a href="#">Блог</a></li>
+        </ul>
+        <ul class="right-side__header">
+            <li class="vertical-line__header"><img src="/img/header/icons/vertical-line.svg" alt=""></li>
+            <li class="list__header pod-menu-list__header-city">
+                <a href="#" class="icons-list__header">
+                    <img src="/img/header/icons/map-pin-fill.svg" alt="map"> 
+                    <span>Москва</span>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="arrow-right__header" d="M8.00001 8.78133L11.3 5.48133L12.2427 6.424L8.00001 10.6667L3.75734 6.424L4.70001 5.48133L8.00001 8.78133Z" fill="white"/>
+                    </svg>
+                </a>
+                <div class="city-wrapper__header">
+                    <span>Укажите ваш город</span>
+                    <div class="search-city">
+                        <input type="text" maxlength="25">
+                        <img src="/img/header/icons/close-icon.svg" alt="" class="close-icon">
+                        <img src="/img/header/icons/check-veryfication.svg" alt="" class="check-veryfication">
+                    </div>
+                    <div class="city-list__header">
+                        <ul>
+                            <li>Санкт-Петербург</li>
+                            <li>Москва</li>
+                            <li>Новосибирск</li>
+                            <li>Екатеринбург</li>
+                            <li>Нижний Новгород</li>
+                            <li>Челябинск</li>
+                            <li>Омск</li>
+                        </ul>
+                        <ul>
+                            <li>Самара</li>
+                            <li>Ростов-на-Дону</li>
+                            <li>Уфа</li>
+                            <li>Красноярск</li>
+                            <li>Перьм</li>
+                            <li>Воронеж</li>
+                            <li>Волгоград</li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="list__header">
+                <a href="#" class="icons-list__header"><img src="/img/header/icons/account_circle.svg" alt=""></a>
+            </li>
+        </ul>
+    </div>
+</header>
+
+    <section id="court-statistics">
+        <div class="container">
+            <div class="header__court">
+                <h1>Статистика судопроизводств</h1>
+                <div class="buttons-left-side-header__court">
+                    <div class="comparison__court">
+                        <img src="/img/header/icons/bar-chart-box-fill-yellow.svg" alt="">
+                        Сравнение <span>2</span>
+                    </div>
+                    <button class="button-normal">Фильтр</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="filter-statistics">
+        <div class="container">
+            <h3>Фильтр статистики</h3>
+            <div class="filter-buttons">
+                <div class="btns-uk-rf">
+                    УК РФ
+                    <img src="/img/header/icons/arrow-right-dark-line.svg" alt="">
+                </div>
+                <div class="btns-calendar">
+                    <img src="/img/header/icons/calendar-event-fill.svg" alt="">
+                    За все время
+                </div>
+                <div class="btns-federation">
+                    Центральный Федеральный Округ
+                    <img src="/img/header/icons/arrow-right-dark-line.svg" alt="">
+                </div>
+                <div class="btns-region">
+                    Московская обл. <span>18</span>
+                    <img src="/img/header/icons/arrow-right-dark-line.svg" alt="">
+                </div>
+                <div class="btns-city">
+                    Город
+                    <img src="/img/header/icons/arrow-right-dark-line.svg" alt="">
+                </div>
+            </div>
+            <div class="filter-buttons-down">
+                <div class="btns-region">
+                    Район
+                    <img src="/img/header/icons/arrow-right-dark-line.svg" alt="">
+                </div>
+                <div class="btns-court">
+                    Суд                   
+                    <img src="/img/header/icons/arrow-right-dark-line.svg" alt="">
+                </div>
+                <div class="btns-judge">
+                    Судья
+                    <img src="/img/header/icons/arrow-right-dark-line.svg" alt="">
+                </div>
+            
+                <div class="button-normal">
+                    Применить
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="top-articles">
+        <div class="container">
+            <div class="header__top-articles">
+                <div class="count-affairs">
+                    % / кол-во дел 
+                </div>
+                <div class="header-name-articles">
+                    № / название статьи   
+                </div>
+                <div class="header-sentence">
+                    Приговор   
+                </div>
+                <div class="header-in-production">
+                    В производстве   
+                </div>
+            </div>
+            <div class="row">
+                <div class="articles-list">
+                    <a href="#graphic" class="yakor">
+                        <div class="articles">
+                            <div class="interest">
+                                31%
+                                <span>193 688</span>
+                            </div>
+                            <div class="articles-uk">
+                                <div class="article">ст.237 УК</div>
+                                <span>Кража</span>
+                            </div>   
+                            <div class="sentence">
+                                74%
+                                <span>109 589</span>
+                            </div> 
+                            <div class="in-production">
+                                15%
+                                <span>647</span>
+                            </div>
+                            <div class="statics">
+                                <img src="/img/header/icons/bar-chart-box-line.svg" alt="">
+                                >
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#graphic" class="yakor">
+                        <div class="articles">
+                            <div class="interest">
+                                25%
+                                <span>173 359</span>
+                            </div>
+                            <div class="articles-uk">
+                                <div class="article">ст.158 УК</div>
+                                <span>Мошенничество</span>
+                            </div>   
+                            <div class="sentence">
+                                69%
+                                <span>49 636</span>
+                            </div> 
+                            <div class="in-production">
+                                20%
+                                <span>647</span>
+                            </div>
+                            <div class="statics">
+                                <img src="/img/header/icons/bar-chart-box-line.svg" alt="">
+                                >
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#graphic" class="yakor">
+                        <div class="articles">
+                            <div class="interest">
+                                20%
+                                <span>150 359</span>
+                            </div>
+                            <div class="articles-uk">
+                                <div class="article">ст.163 УК</div>
+                                <span>Вымогательство</span>
+                            </div>   
+                            <div class="sentence">
+                                81%
+                                <span>49 636</span>
+                            </div> 
+                            <div class="in-production">
+                                12%
+                                <span>647</span>
+                            </div>
+                            <div class="statics">
+                                <img src="/img/header/icons/bar-chart-box-fill-yellow.svg" alt="">
+                                >
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#graphic" class="yakor">
+                        <div class="articles">
+                            <div class="interest">
+                                18%
+                                <span>120 359</span>
+                            </div>
+                            <div class="articles-uk">
+                                <div class="article">ст.237 УК</div>
+                                <span>Сокрытие информации об обстоятельствах, создающих опасность для жизни или ...</span>
+                            </div>   
+                            <div class="sentence">
+                                54%
+                                <span>49 636</span>
+                            </div> 
+                            <div class="in-production">
+                                3%
+                                <span>57</span>
+                            </div>
+                            <div class="statics">
+                                <img src="/img/header/icons/bar-chart-box-line.svg" alt="">
+                                >
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#graphic" class="yakor">
+                        <div class="articles">
+                            <div class="interest">
+                                17%
+                                <span>99 359</span>
+                            </div>
+                            <div class="articles-uk">
+                                <div class="article">ст.163 УК</div>
+                                <span>Злоупотребление полномочиями</span>
+                            </div>   
+                            <div class="sentence">
+                                22%
+                                <span>49 636</span>
+                            </div> 
+                            <div class="in-production">
+                                5%
+                                <span>72</span>
+                            </div>
+                            <div class="statics">
+                                <img src="/img/header/icons/bar-chart-box-fill-yellow.svg" alt="">
+                                >
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#graphic" class="yakor">
+                        <div class="articles">
+                            <div class="interest">
+                                15%
+                                <span>193 688</span>
+                            </div>
+                            <div class="articles-uk">
+                                <div class="article">ст.237 УК</div>
+                                <span>Нарушение правил эксплуатации средств хранения, обработки или передачи ...</span>
+                            </div>   
+                            <div class="sentence">
+                                95%
+                                <span>109 589</span>
+                            </div> 
+                            <div class="in-production">
+                                9%
+                                <span>647</span>
+                            </div>
+                            <div class="statics">
+                                <img src="/img/header/icons/bar-chart-box-fill-yellow.svg" alt="">
+                                >
+                            </div>
+                        </div>
+                    </a>
+                   <a href="#graphic" class="yakor">
+                    <div class="articles">
+                        <div class="interest">
+                            14%
+                            <span>175 359</span>
+                        </div>
+                            <div class="articles-uk">
+                                <div class="article">ст.158 УК</div>
+                                <span>Склонение к потреблению наркотических средств, психотропных веществ или их ...</span>
+                            </div>   
+                        <div class="sentence">
+                            69%
+                            <span>49 636</span>
+                        </div> 
+                        <div class="in-production">
+                            20%
+                            <span>647</span>
+                        </div>
+                        <div class="statics">
+                            <img src="/img/header/icons/bar-chart-box-line.svg" alt="">
+                            >
+                        </div>
+                    </div>
+                   </a>
+                </div>
+                <div class="graphic__top" id="graphic">
+                    <div class="header-graphic__top">
+                        ст. 237 УК РФ
+                    </div>
+                    <div class="description-header-graphic">
+                        Сокрытие информации об обстоятельствах, создающих опасность для жизни или здоровья людей
+                    </div>
+                    <div class="line"></div>
+                    <h3>Статистика по вынесенным приговорам</h3>
+                    <img src="/img/articles/graphic.svg" alt="">
+                    <div class="graphic-setting">
+                        <div class="blue">
+                            2-5<br>
+                            <span>мин</span>
+                            <div class="line-graphic-blue"></div>
+                            <div class="interest">50%</div>
+                        </div>
+                        <div class="yellow">
+                            5-7<br>
+                            <span>сред</span>
+                            <div class="line-graphic-yellow"></div>
+                            <div class="interest">30%</div>
+                        </div>
+                        <div class="red">
+                            7-10<br>
+                            <span>макс</span>
+                            <div class="line-graphic-red"></div>
+                            <div class="interest">20%</div>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="add-to-compaer">
+                        <img src="/img/header/icons/bar-chart-box-line.svg" alt="">
+                        Добавить к сравнению
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="container">
+        <div class="row">
+            <div class="one-column__footer">
+                <div class="logotype__footer">
+                    <img src="/img//logotype/logtype.svg" alt="">
+                </div>
+                <div class="line"></div>
+                <ul>
+                    <li><a href="#">Судебная практика</a></li>
+                    <li><a href="#">Аналитика</a></li>
+                    <li><a href="#">О проекте</a></li>
+                    <li><a href="#">Поддержка</a></li>
+                </ul>
+                <div class="line"></div>
+                <div class="politic__footer">
+                    Правила обработки <br>персональных данных
+                </div>
+                <div class="copyright__footer">
+                    © 2022 Правостат. Все <br>права защищены
+                </div>
+            </div>
+            <div class="two-column__footer">
+                <div class="name-column__footer">Специалисты</div>
+                <div class="list-menu__footer">
+                    <ul>
+                        <li><a href="#">Адвокаты</a></li>
+                        <li><a href="#">Юристы</a></li>
+                        <li><a href="#">Нотариусы</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Криминалисты</a></li>
+                        <li><a href="#">Налоговые инспекторы</a></li>
+                        <li><a href="#">Прокуроры</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Судьи</a></li>
+                        <li><a href="#">Следователи</a></li>
+                        <li><a href="#">Таможенные инспекторы</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Адвокаты</a></li>
+                        <li><a href="#">Юристы</a></li>
+                        <li><a href="#">Нотариусы</a></li>
+                    </ul>
+                </div>
+                <div class="line"></div>
+                <div class="name-column__footer">Кодексы</div>
+                <div class="list-menu__footer adaptive-hidden">
+                    <ul>
+                        <li><a href="#">Гражданский кодекс</a></li>
+                        <li><a href="#">Трудовой кодекс</a></li>
+                        <li><a href="#">Налоговый кодекс</a></li>
+                        <li><a href="#">Кодекс об административных правонарушениях</a></li>
+                        <li><a href="#">Уголовный кодекс</a></li>
+                        <li><a href="#">Гражданский процессуальный кодекс</a></li>
+                        <li><a href="#">Уголовно-процессуальный кодекс</a></li>
+                        <li><a href="#">Арбитражный процессуальный кодекс</a></li>
+                        <li><a href="#">Земельный кодекс</a></li>
+                        <li><a href="#">Жилищный кодекс</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Семейный кодекс</a></li>
+                        <li><a href="#">Бюджетный кодекс</a></li>
+                        <li><a href="#">Градостроительный кодекс</a></li>
+                        <li><a href="#">Кодекс административного судопроизводства</a></li>
+                        <li><a href="#">Уголовно-исполнительный кодекс</a></li>
+                        <li><a href="#">Лесной кодекс</a></li>
+                        <li><a href="#">Водный кодекс</a></li>
+                        <li><a href="#">Воздушный кодекс</a></li>
+                        <li><a href="#">Кодекс торгового мореплавания</a></li>
+                        <li><a href="#">Кодекс внутреннего водного транспорта</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="list-menu__footer adaptive-visible">
+            <ul>
+                <li><a href="#">Гражданский кодекс</a></li>
+                <li><a href="#">Трудовой кодекс</a></li>
+                <li><a href="#">Налоговый кодекс</a></li>
+                <li><a href="#">Кодекс об административных правонарушениях</a></li>
+                <li><a href="#">Уголовный кодекс</a></li>
+                <li><a href="#">Гражданский процессуальный кодекс</a></li>
+                <li><a href="#">Уголовно-процессуальный кодекс</a></li>
+                <li><a href="#">Арбитражный процессуальный кодекс</a></li>
+                <li><a href="#">Земельный кодекс</a></li>
+                <li><a href="#">Жилищный кодекс</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Семейный кодекс</a></li>
+                <li><a href="#">Бюджетный кодекс</a></li>
+                <li><a href="#">Градостроительный кодекс</a></li>
+                <li><a href="#">Кодекс административного судопроизводства</a></li>
+                <li><a href="#">Уголовно-исполнительный кодекс</a></li>
+                <li><a href="#">Лесной кодекс</a></li>
+                <li><a href="#">Водный кодекс</a></li>
+                <li><a href="#">Воздушный кодекс</a></li>
+                <li><a href="#">Кодекс торгового мореплавания</a></li>
+                <li><a href="#">Кодекс внутреннего водного транспорта</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+
+
+    <!-- js -->
+    <script src="/js/court-statistics.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>

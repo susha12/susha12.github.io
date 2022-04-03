@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+
+		<meta charset="utf-8">
+
+		<title>Правостат - Статистика судопроизводств</title>
+		<meta name="description" content="htmllessons.ru - Лучшие уроки по созданию сайтов">
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/png">
+
+		<!-- Chrome, Firefox OS and Opera -->
+		<meta name="theme-color" content="#36A26B">
+		<!-- Windows Phone -->
+		<meta name="msapplication-navbutton-color" content="#36A26B">
+		<!-- iOS Safari -->
+		<meta name="apple-mobile-web-app-status-bar-style" content="#36A26B">
+
+        <!-- стили -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/lawyer-page.css">
+        <link rel="stylesheet" href="css/adaptive.css">
+
+    </head>
+
+    <body>
+  <!-- Шапка -->
+  <header id="header">
+    <div class="menu__header">
+        <div class="logotype__header">
+            <a href="lawyer-page.html">
+                <img src="/img/logotype/logtype.svg" alt="">
+            </a>
+        </div>
+        <div class="hamburger-menu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="adaptive-center-side-header">
+            <div class="close-adaptive-menu">&#10006;</div>
+            <div class="logotype__header adaptive-logotype">
+                <a href="lawyer-page.html">
+                    <img src="/img/logotype/logtype.svg" alt="">
+                </a>
+            </div>
+            <ul class="adaptive-hamburger-menu">
+                <li class="list__header"><a href="#">Судебная практика</a></li>
+                <li class="list__header"><a href="#">Аналитика</a></li>
+                <li class="list__header pod-menu-adaptive__header">
+                    <a href="#" class="arrow-right-list__header">
+                        Поиск специалиста
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="arrow-right__header" d="M8.00001 8.78133L11.3 5.48133L12.2427 6.424L8.00001 10.6667L3.75734 6.424L4.70001 5.48133L8.00001 8.78133Z" fill="white"/>
+                        </svg>
+                        <div class="pod-menu-adaptive-list__header">
+                            <a class="adaptive-menu" href="#">Адвокаты</a>
+                            <a class="adaptive-menu" href="#">Юристы</a>
+                            <a class="adaptive-menu" href="#">Нотариусы</a>
+                            <a class="adaptive-menu" href="#">Криминалисты</a>
+                            <a class="adaptive-menu" href="#">Налоговые инспекторы</a>
+                            <a class="adaptive-menu" href="#">Прокуроры</a>
+                            <a class="adaptive-menu" href="#">Судьи</a>
+                            <a class="adaptive-menu" href="#">Следователи</a>
+                            <a class="adaptive-menu" href="#">Адвокаты</a>
+                            <a class="adaptive-menu" href="#">Таможенные инспекторы</a>
+                            <a class="adaptive-menu" href="#">Юристы</a>
+                            <a class="adaptive-menu" href="#">Нотариусы</a>
+                        </div> 
+                    </a>
+                </li>
+                <li class="list__header">
+                    <a href="#" class="arrow-right-list__header">
+                        Кодексы
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="arrow-right__header" d="M8.00001 8.78133L11.3 5.48133L12.2427 6.424L8.00001 10.6667L3.75734 6.424L4.70001 5.48133L8.00001 8.78133Z" fill="white"/>
+                        </svg>
+                    </a>
+                </li>
+                <li class="list__header"><a href="#">Блог</a></li>
+            </ul>
+        </div>
+        <ul class="center-side__header">
+            <li class="list__header"><a href="#">Судебная практика</a></li>
+            <li class="list__header"><a href="#">Аналитика</a></li>
+            <li class="list__header pod-menu__header">
+                <a href="#" class="arrow-right-list__header">
+                    Поиск специалиста
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="arrow-right__header" d="M8.00001 8.78133L11.3 5.48133L12.2427 6.424L8.00001 10.6667L3.75734 6.424L4.70001 5.48133L8.00001 8.78133Z" fill="white"/>
+                    </svg>
+                    <div class="pod-menu-list__header">
+                        <a href="#">Адвокаты</a>
+                        <a href="#">Юристы</a>
+                        <a href="#">Нотариусы</a>
+                        <a href="#">Криминалисты</a>
+                        <a href="#">Налоговые инспекторы</a>
+                        <a href="#">Прокуроры</a>
+                        <a href="#">Судьи</a>
+                        <a href="#">Следователи</a>
+                        <a href="#">Адвокаты</a>
+                        <a href="#">Таможенные инспекторы</a>
+                        <a href="#">Юристы</a>
+                        <a href="#">Нотариусы</a>
+                    </div>
+                </a>
+            </li>
+            
+            <li class="list__header">
+                <a href="#" class="arrow-right-list__header">
+                    Кодексы
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="arrow-right__header" d="M8.00001 8.78133L11.3 5.48133L12.2427 6.424L8.00001 10.6667L3.75734 6.424L4.70001 5.48133L8.00001 8.78133Z" fill="white"/>
+                    </svg>
+                </a>
+            </li>
+            <li class="list__header"><a href="#">Блог</a></li>
+        </ul>
+        <ul class="right-side__header">
+            <li class="vertical-line__header"><img src="/img/header/icons/vertical-line.svg" alt=""></li>
+            <li class="list__header pod-menu-list__header-city">
+                <a href="#" class="icons-list__header">
+                    <img src="/img/header/icons/map-pin-fill.svg" alt="map"> 
+                    <span>Москва</span>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="arrow-right__header" d="M8.00001 8.78133L11.3 5.48133L12.2427 6.424L8.00001 10.6667L3.75734 6.424L4.70001 5.48133L8.00001 8.78133Z" fill="white"/>
+                    </svg>
+                </a>
+                <div class="city-wrapper__header">
+                    <span>Укажите ваш город</span>
+                    <div class="search-city">
+                        <input type="text" maxlength="25">
+                        <img src="/img/header/icons/close-icon.svg" alt="" class="close-icon">
+                        <img src="/img/header/icons/check-veryfication.svg" alt="" class="check-veryfication">
+                    </div>
+                    <div class="city-list__header">
+                        <ul>
+                            <li>Санкт-Петербург</li>
+                            <li>Москва</li>
+                            <li>Новосибирск</li>
+                            <li>Екатеринбург</li>
+                            <li>Нижний Новгород</li>
+                            <li>Челябинск</li>
+                            <li>Омск</li>
+                        </ul>
+                        <ul>
+                            <li>Самара</li>
+                            <li>Ростов-на-Дону</li>
+                            <li>Уфа</li>
+                            <li>Красноярск</li>
+                            <li>Перьм</li>
+                            <li>Воронеж</li>
+                            <li>Волгоград</li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="list__header">
+                <a href="#" class="icons-list__header"><img src="/img/header/icons/account_circle.svg" alt=""></a>
+            </li>
+        </ul>
+    </div>
+</header>
+
+        <section id="lawyer-page">
+            <div class="header-lawyer"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="one-column__lawyer">
+                        <img src="/img/lawyer/people.svg" alt="">
+                        <div class="feedback__lawyer">
+                            <div>
+                                <img src="/img/header/icons/map-pin-fill.svg" alt="">
+                                <div>Москва</div>
+                            </div>
+                            <div>
+                                <img src="/img/header/icons/messanger.svg" alt="">
+                                <img src="/img/header/icons/telegram.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="static__lawyer">
+                            <div class="contucted-cases__lawyer">
+                                815<br>
+                                <p>Проведенных дел</p>
+                            </div>
+                            <div class="user-raiting__lawyer">
+                                4.6<br>
+                                <p>Оценка пользователей</p>
+                            </div>
+                        </div>
+                        <button class="button-normal-secondary">Написать сообщение</button>
+                    </div>
+                    <div class="two-column__lawyer">
+                        <div class="name-lawyer">Райан Томас Гослинг</div>
+                        <div class="description-name__lawyer">
+                            <img src="/img/header/icons/vertical-line.svg" alt="">
+                            <div>Рейтинг: <br><span>38.4 балла</span></div>
+                            <img src="/img/header/icons/vertical-line.svg" alt="">
+                            <div>Стаж: <br><span>25 лет</span></div>
+                            <img src="/img/header/icons/vertical-line.svg" alt="">
+                            <div>Специализация: <br><span>Кражи, грабежи</span></div>
+                        </div>
+                        <div class="menu-lawyer">
+                            <ul>
+                                <li class="active">Информация</li>
+                                <li>Услуги</li>
+                                <li>Судебная практика</li>
+                                <li>Отзывы <span>84</span></li>
+                                <li>Контакты</li>
+                            </ul>
+                            <div class="line"></div>
+                        </div>
+                      <div class="biography__lawyer">
+                        <h5>Основная информация</h5>
+                        <p>Повар-адвокат, руководитель практики головологоловоногого права (Мак-флури офис). Действующий партнер объединения “Кто крайний, я за вами буду”.</p>
+                        <br><br>
+                        <p>Стаж работы в сфере “черного квадрата”: более 200 лет. Этот странный опыт он приобрел, в частности, находясь на руководящих должностях “Охрана-отмена” в Макдональдс .</p>
+                        <br><br>
+                        <p>Высококвалифицированный специалист в сфере решение комплексных проблем в таких отраслях:</p>
+                        <ul class="list-numers">
+                            <li>шантаж</li>
+                            <li>шиномонтаж</li>
+                            <li>вымогательство</li>
+                            <li>рекет</li>
+                            <li>дизайн сайтов.</li>
+                        </ul><br><br>
+                        <h5>Образование</h5><br><br>
+                        <p>Получил высшее юридическое образование в ссыльно-каторжной тюрьме на территории Соловецких островов им. Валдиса Пельша и высшее специальное образование в области беспредела Соловецкого тюрьмы-института интеллектуальной собственности и трудового использования и перевоспитания особо опасных политических и уголовных преступников.</p><br><br>
+                        <h5>Членство в профессиональных сообществах</h5><br><br>
+                        <ul>
+                            <li style="list-style: decimal">Измайловская организованная преступная группировка</li>
+                            <li style="list-style: decimal">Ассоциация Двадцать девятый комплекс</li>
+                            <li style="list-style: decimal">Члена Совета Хади Такташ</li>
+                            <li style="list-style: decimal">Член правления Национальной ассоциации Общак</li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- footer -->
+        <   <footer id="footer">
+            <div class="container">
+            <div class="row">
+                <div class="one-column__footer">
+                    <div class="logotype__footer">
+                        <img src="/img//logotype/logtype.svg" alt="">
+                    </div>
+                    <div class="line"></div>
+                    <ul>
+                        <li><a href="#">Судебная практика</a></li>
+                        <li><a href="#">Аналитика</a></li>
+                        <li><a href="#">О проекте</a></li>
+                        <li><a href="#">Поддержка</a></li>
+                    </ul>
+                    <div class="line"></div>
+                    <div class="politic__footer">
+                        Правила обработки <br>персональных данных
+                    </div>
+                    <div class="copyright__footer">
+                        © 2022 Правостат. Все <br>права защищены
+                    </div>
+                </div>
+                <div class="two-column__footer">
+                    <div class="name-column__footer">Специалисты</div>
+                    <div class="list-menu__footer">
+                        <ul>
+                            <li><a href="#">Адвокаты</a></li>
+                            <li><a href="#">Юристы</a></li>
+                            <li><a href="#">Нотариусы</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Криминалисты</a></li>
+                            <li><a href="#">Налоговые инспекторы</a></li>
+                            <li><a href="#">Прокуроры</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Судьи</a></li>
+                            <li><a href="#">Следователи</a></li>
+                            <li><a href="#">Таможенные инспекторы</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Адвокаты</a></li>
+                            <li><a href="#">Юристы</a></li>
+                            <li><a href="#">Нотариусы</a></li>
+                        </ul>
+                    </div>
+                    <div class="line"></div>
+                    <div class="name-column__footer">Кодексы</div>
+                    <div class="list-menu__footer adaptive-hidden">
+                        <ul>
+                            <li><a href="#">Гражданский кодекс</a></li>
+                            <li><a href="#">Трудовой кодекс</a></li>
+                            <li><a href="#">Налоговый кодекс</a></li>
+                            <li><a href="#">Кодекс об административных правонарушениях</a></li>
+                            <li><a href="#">Уголовный кодекс</a></li>
+                            <li><a href="#">Гражданский процессуальный кодекс</a></li>
+                            <li><a href="#">Уголовно-процессуальный кодекс</a></li>
+                            <li><a href="#">Арбитражный процессуальный кодекс</a></li>
+                            <li><a href="#">Земельный кодекс</a></li>
+                            <li><a href="#">Жилищный кодекс</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Семейный кодекс</a></li>
+                            <li><a href="#">Бюджетный кодекс</a></li>
+                            <li><a href="#">Градостроительный кодекс</a></li>
+                            <li><a href="#">Кодекс административного судопроизводства</a></li>
+                            <li><a href="#">Уголовно-исполнительный кодекс</a></li>
+                            <li><a href="#">Лесной кодекс</a></li>
+                            <li><a href="#">Водный кодекс</a></li>
+                            <li><a href="#">Воздушный кодекс</a></li>
+                            <li><a href="#">Кодекс торгового мореплавания</a></li>
+                            <li><a href="#">Кодекс внутреннего водного транспорта</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="list-menu__footer adaptive-visible">
+                <ul>
+                    <li><a href="#">Гражданский кодекс</a></li>
+                    <li><a href="#">Трудовой кодекс</a></li>
+                    <li><a href="#">Налоговый кодекс</a></li>
+                    <li><a href="#">Кодекс об административных правонарушениях</a></li>
+                    <li><a href="#">Уголовный кодекс</a></li>
+                    <li><a href="#">Гражданский процессуальный кодекс</a></li>
+                    <li><a href="#">Уголовно-процессуальный кодекс</a></li>
+                    <li><a href="#">Арбитражный процессуальный кодекс</a></li>
+                    <li><a href="#">Земельный кодекс</a></li>
+                    <li><a href="#">Жилищный кодекс</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Семейный кодекс</a></li>
+                    <li><a href="#">Бюджетный кодекс</a></li>
+                    <li><a href="#">Градостроительный кодекс</a></li>
+                    <li><a href="#">Кодекс административного судопроизводства</a></li>
+                    <li><a href="#">Уголовно-исполнительный кодекс</a></li>
+                    <li><a href="#">Лесной кодекс</a></li>
+                    <li><a href="#">Водный кодекс</a></li>
+                    <li><a href="#">Воздушный кодекс</a></li>
+                    <li><a href="#">Кодекс торгового мореплавания</a></li>
+                    <li><a href="#">Кодекс внутреннего водного транспорта</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+        <!-- js -->
+        <script src="/js/main.js"></script>
+    </body>
+</html>
